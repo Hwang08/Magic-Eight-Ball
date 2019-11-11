@@ -1,0 +1,304 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4a4a55;
+    background-color: #000;
+    background: url("../images/smoke-376543.jpg") center;
+    height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+    position: relative;
+    color: #000;
+}
+
+h1 {
+    margin: 0 auto 20px auto;
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
+    /* text-shadow: 0 0 0.5em #8a2be2, 0 0 0.5em #8a2be2, 0 0 0.5em #8a2be2; */
+
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
+    /* text-shadow: 0 0 0.5em #8a2be2, 0 0 0.5em #8a2be2, 0 0 0.5em #8a2be2; */
+
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    /* color: black; */
+}
+
+/* ========================================================================================= */
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+    height: 1%;
+    padding: 10px 0px 10px 5px;
+}
+
+.questionbox {
+    margin: auto;
+    width: 500px;
+    /* Shows to border of the questionbox */
+    /* border: 1px solid #000; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.questionbox input {
+    font-size: 1rem;
+    height: 30px;
+    padding: 5px;
+    width: 380px;
+    outline: 0;
+}
+
+.questionbox a {
+    line-height: 30px;
+    color: #000;
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.questionbox a span {
+    float: left;
+    display: block;
+}
+
+.questionbox a.option {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.questiontext {
+    width: 50px;
+    width: 0px;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: 100ms all;
+    -moz-transition: 100ms all;
+    -o-transition: 100ms all;
+    transition: 100ms all;
+}
+
+.butn{
+   padding: 5px;
+   margin: 10px;
+}
+
+.butn:focus{
+    outline: none;
+}
+
+.butn:hover {
+    opacity: .8;
+}
+
+
+#output{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    /* text-shadow: 0 0 0.5em #8a2be2, 0 0 0.5em #8a2be2, 0 0 0.5em #8a2be2; */
+    text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
+
+}
+
+/* ========================================================================================= */
+
+/* class selectors */
+
+.topContainer {
+    margin: 0 auto 60px;
+    padding-top: 10px;
+}
+
+.middleContainer {
+    margin: 30px auto auto;
+}
+
+.magicEightBall {
+    width: 100px;
+    height: auto;
+}
+
+#footer{
+    position: absolute;
+    background-color: #000;
+    bottom: 0;
+	width: 100%;
+	height: 80px;
+}
+
+/* if I remove this the little white space at the very bottom is removed */
+#footer-nav{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.footer-links{
+	color: silver;
+	margin: 0 10px;
+}
+#footer nav .footer-links:hover{
+	color: #fff;
+}
+
+.footer-links:visited{
+	color: silver;
+}
+
+.copyright{
+    font-size: 15px;
+   padding-bottom: 10px;
+   padding-top: 20px;
+   color: dimgrey;
+}
+
+/* ------------ Smoke Effect ------------ */
+
+section{
+    height: 100vh;
+    background: #000;
+}
+
+.preload{
+    height: 100vh;
+    background: #000;
+     /* puts the preload div on top of the section */
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 100vh;
+    /* Transitions the preload div opacity to 0 */
+    transition: opacity 0.5s ease;
+}
+
+/* app.js calls this class to remove the preloader */
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+video{
+    object-fit: cover;
+    /* Positions the video centered to cover the letters in 24 in monitor */
+    position: absolute;
+    left: 10%;
+}
+
+@media only screen and (max-width: 1297px){
+    video{
+        object-fit: cover;
+        position: absolute;
+        bottom: 2%;
+    }
+}
+
+section #smoke-h1{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 37%;
+    transform: translateY(-40%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    text-shadow: none;
+    font-size: 4em;
+    font-family: cursive;
+    letter-spacing: 0.2em;
+}
+
+@media only screen and (max-width: 1297px){
+    section #smoke-h1{
+        margin:0;
+        padding: 0;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-35%);
+        width: 100%;
+        text-align: center;
+        color: #ddd;
+        text-shadow: none;
+        font-size: 4em;
+        font-family: cursive;
+        letter-spacing: 0.2em;
+    }
+}
+
+#smoke-h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1.5s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+#smoke-h1 span:nth-child(1){
+    animation-delay: 1s;
+}
+#smoke-h1 span:nth-child(2){
+    animation-delay: 1.7s;
+}
+#smoke-h1 span:nth-child(3){
+    animation-delay: 2.3s;
+}
+#smoke-h1 span:nth-child(4){
+    animation-delay: 3.3s;
+}
+#smoke-h1 span:nth-child(5){
+    animation-delay: 5.5s;
+}
+
+@media only screen and (max-width: 1279px){
+    #smoke-h1 span:nth-child(1){
+        animation-delay: 1s;
+    }
+    #smoke-h1 span:nth-child(2){
+        animation-delay: 1.7s;
+    }
+    #smoke-h1 span:nth-child(3){
+        animation-delay: 2.3s;
+    }
+    #smoke-h1 span:nth-child(4){
+        animation-delay: 3.3s;
+    }
+    #smoke-h1 span:nth-child(5){
+        animation-delay: 3s;
+    }
+}
