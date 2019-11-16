@@ -1,8 +1,4 @@
 
-
-
-
-
 // -----------------------------------------------------------------------------------
 
 document.querySelector("button").addEventListener("click", rollEightBall);
@@ -10,9 +6,9 @@ document.querySelector("button").addEventListener("click", rollEightBall);
 // ----------------------------------------------------------------------------------
 function rollEightBall() {
 
-    var input = document.getElementById("input").value;
+    var userInput = document.getElementById("input").value;
 
-    if (input.length < 6) {
+    if (userInput.length < 6) {
         $("#output").text("Enter a Yes or No Question.");
     } else {
         // Math.random(); generates a number from 0 - 0.9999999999999999 (16 decimal places). This generates up to a billion different random numbers.
@@ -27,64 +23,84 @@ function rollEightBall() {
 
         switch (randomNumber) {
             case 0:
-                $("#output").text("It is certain");
+                $("#output").html(userInput + "<br/> It is certain");
+                input.value = '';
                 break;
             case 1:
-                $("#output").text("It is decidedly so");
+                $("#output").html(userInput + "<br/> It is decidedly so");
+                input.value = '';
                 break;
             case 2:
-                $("#output").text("Without a doubt");
+                $("#output").html(userInput + "<br/> Without a doubt");
+                input.value = '';
                 break;
             case 3:
-                $("#output").text("Yes, definitley");
+                $("#output").html(userInput + "<br/> Yes, definitley");
+                input.value = '';
                 break;
             case 4:
-                $("#output").text("You may rely on it");
+                $("#output").html(userInput + "<br/> You may rely on it");
+                input.value = '';
                 break;
             case 5:
-                $("#output").text("As I see it, yes");
+                $("#output").html(userInput + "<br/> As I see it, yes");
+                input.value = '';
                 break;
             case 6:
-                $("#output").text("Most likely");
+                $("#output").html(userInput + "<br/> Most likely");
+                input.value = '';
                 break;
             case 7:
-                $("#output").text("Outlook good");
+                $("#output").html(userInput + "<br/> Outlook good");
+                input.value = '';
                 break;
             case 8:
-                $("#output").text("Yes");
+                $("#output").html(userInput + "<br/> Yes");
+                input.value = '';
                 break;
             case 9:
-                $("#output").text("Signs point to yes");
+                $("#output").html(userInput + "<br/> Signs point to yes");
+                input.value = '';
                 break;
             case 10:
-                $("#output").text("Reply hazy try again");
+                $("#output").html(userInput + "<br/> Reply hazy try again");
+                input.value = '';
                 break;
             case 11:
-                $("#output").text("Ask again later");
+                $("#output").html(userInput + "<br/> Ask again later");
+                input.value = '';
                 break;
             case 12:
-                $("#output").text("Better not tell you now");
+                $("#output").html(userInput + "<br/> Better not tell you now");
+                input.value = '';
                 break;
             case 13:
-                $("#output").text("Maybe");
+                $("#output").html(userInput + "<br/> Maybe");
+                input.value = '';
                 break;
             case 14:
-                $("#output").text("Maybe so");
+                $("#output").html(userInput + "<br/> Maybe so");
+                input.value = '';
                 break;
             case 15:
-                $("#output").text("Don't count on it");
+                $("#output").html(userInput + "<br/> Don't count on it");
+                input.value = '';
                 break;
             case 16:
-                $("#output").text("My reply is no");
+                $("#output").html(userInput + "<br/> My reply is no");
+                input.value = '';
                 break;
             case 17:
-                $("#output").text("My sources say no");
+                $("#output").html(userInput + "<br/> My sources say no");
+                input.value = '';
                 break;
             case 18:
-                $("#output").text("Outlook not so good");
+                $("#output").html(userInput + "<br/> Outlook not so good");
+                input.value = '';
                 break;
             case 19:
-                $("#output").text("Very doubtful");
+                $("#output").html(userInput + "<br/> Very doubtful");
+                input.value = '';
                 break;
         }
     }
@@ -97,3 +113,4 @@ window.addEventListener(setTimeout(() => {
     const preload = document.querySelector('.preload');
     preload.classList.add('preload-finish');
 }, 10000));
+
