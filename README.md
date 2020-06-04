@@ -6,3 +6,5 @@ Magic Eight Ball program simulates a fortune telling eight ball. A random fortun
 - CSS
 - JavaScript
 - Jquery
+- Responsive
+
