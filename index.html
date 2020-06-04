@@ -2,61 +2,57 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <title>The Magic Eight Ball 🎱</title>
-    <link rel="icon" href="images/pngtube.com-magic-8-ball-png-2650020.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <meta charset="utf-8">
+  <title>The Magic Eight Ball 🎱</title>
+  <link rel="icon" href="images/pngtube.com-magic-8-ball-png-2650020.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
-    <div class="preload">
-        <section>
-            <video src="images/smoke.mp4" autoplay muted></video>
-            <h1 id="smoke-h1">
-                <span>The</span>
-                <span>Magic</span>
-                <span>Eight</span>
-                <span>Ball</span>
-                <span>🎱</span>
-            </h1>
-        </section>
+  <div class="preload">
+    <section>
+      <video src="images/smoke.mp4" autoplay muted></video>
+      <h1 id="smoke-h1">
+        <span>The</span>
+        <span>Magic</span>
+        <span>Eight</span>
+        <span>Ball</span>
+        <span>🎱</span>
+      </h1>
+    </section>
+  </div>
+
+  <div class="topContainer">
+    <h1>The Magic Eight Ball</h1>
+    <h3 id="topContainer-h3">The Magic Eight Ball tells your fortune or helps you seek advice. <br> <br> Ask it a
+      yes or no
+      question and your fortune will be granted.</h3>
+  </div>
+
+  <img class="magicEightBall" src="images/pngtube.com-magic-8-ball-png-2650020.png" alt="The Magic Eight Ball">
+
+  <div class="middleContainer">
+    <!-- Input Box -->
+    <div class="clearfix questionbox">
+      <form action="">
+        <input type="text" id="input" placeholder="Ask a Yes or No question.">
+        <button class="butn" type="submit" name="button">Ask 🎱</button>
+        <p id="output">?⸮?</p>
+      </form>
     </div>
+  </div>
 
-    <div class="topContainer">
-        <h1>The Magic Eight Ball</h1>
-        <h3 id="topContainer-h3">The Magic Eight Ball tells your fortune or helps you seek advice. <br> <br> Ask it a
-            yes or no
-            question and your fortune will be granted.</h3>
-    </div>
+  <footer id="footer">
+    <nav id="footer-nav">
+      <a class="footer-links" href="https://github.com/Hwang08">GitHub <i class="fab fa-github fa-lg"></i></a>
+      <a class="footer-links" href="https://twitter.com/PatHwang8">Twitter <i class="fab fa-twitter fa-lg"></i></a>
+      <p id="copyright">&copy 2019 Patrick Hwang. All rights reserved.</p>
+    </nav>
+  </footer>
 
-    <img class="magicEightBall" src="images/pngtube.com-magic-8-ball-png-2650020.png" alt="The Magic Eight Ball">
-
-    <div class="middleContainer">
-
-        <!-- Input Box -->
-        <div class="clearfix questionbox">
-            <input type="text" id="input" placeholder="Ask a Yes or No question.">
-            <button class="butn" type="submit" name="button">Ask 🎱</button>
-            <p id="output">?⸮?</p>
-        </div>
-
-    </div>
-
-    <footer id="footer">
-        <nav id="footer-nav">
-            <!-- <a class="footer-links" href="contact.html">Contact Me <i class="fas fa-envelope fa-lg"></i></a> -->
-            <!-- <a class="footer-links" href="https://www.linkedin.com/in/patrick-hwang-695275179/">LinkedIn <i
-                    class="fab fa-linkedin fa-lg"></i></a> -->
-            <a class="footer-links" href="https://github.com/Hwang08">GitHub <i class="fab fa-github fa-lg"></i></a>
-            <a class="footer-links" href="https://twitter.com/PatHwang8">Twitter <i
-                    class="fab fa-twitter fa-lg"></i></a>
-            <p id="copyright">&copy 2019 Patrick Hwang. All rights reserved.</p>
-        </nav>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="scripts/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
