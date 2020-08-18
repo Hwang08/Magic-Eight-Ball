@@ -6,3 +6,5 @@ Magic Eight Ball
 - CSS
 - JavaScript
 - Jquery
+- Responsive
+
